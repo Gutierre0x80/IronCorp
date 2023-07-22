@@ -12,6 +12,7 @@ ________________________________________________________________________________
 <h2>S2</h2>
 
 [ENG]
+
 1- The code begins by importing necessary libraries and modules, such as "sys," "psutil" (for obtaining system information), "http.server," and "socketserver" (for creating a web server), "threading" (for executing tasks in the background), "requests" (for making HTTP requests), "time" (for adding delays), "urllib.parse" (for encoding and decoding URLs), and "netifaces" (for getting network interface information).
 
 2- Next, two functions are defined: "urlencode" and "urldecode," which are used for encoding and decoding strings for use in URLs.
@@ -31,7 +32,7 @@ ________________________________________________________________________________
 10- The code generates two different payloads to be used in an SSRF command injection. The first payload is used to make the web server on the target machine download the "shell.ps1" file and save it to "E:\xampp\htdocs\internal\shell.ps1". The second payload is used to execute the "shell.ps1" script on the target machine.
 
 11- After a brief delay, the exploit sends the request containing the second payload to the SSRF injection URL "http://internal.ironcorp.me:11025/name.php?name=Equinox|", which will result in the execution of the "shell.ps1" script on the target machine.
-
+______________________________________________________________________________________________________________________________________________________________________________________________________________________
 [PT BR]
 
 1- O código começa importando as bibliotecas e módulos necessários, como "sys", "psutil" (para obter informações do sistema), "http.server" e "socketserver" (para criar um servidor web), "threading" (para executar tarefas em segundo plano), "requests" (para enviar solicitações HTTP), "time" (para adicionar pausas), "urllib.parse" (para codificar e decodificar URLs) e "netifaces" (para obter informações da interface de rede).
