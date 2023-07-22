@@ -11,7 +11,7 @@ ________________________________________________________________________________
 
 <h2>S2</h2>
 
-[ENG]
+[EN]
 
 1- The code begins by importing necessary libraries and modules, such as "sys," "psutil" (for obtaining system information), "http.server," and "socketserver" (for creating a web server), "threading" (for executing tasks in the background), "requests" (for making HTTP requests), "time" (for adding delays), "urllib.parse" (for encoding and decoding URLs), and "netifaces" (for getting network interface information).
 
