@@ -11,6 +11,8 @@ ________________________________________________________________________________
 
 <h2>S2</h2>
 
+![script](https://github.com/Gutierre0x80/IronCorp/assets/63872706/0298f5ae-8c57-45cf-b7fa-7857710dc71c)
+
 [EN]
 
 1- The code begins by importing necessary libraries and modules, such as "sys," "psutil" (for obtaining system information), "http.server," and "socketserver" (for creating a web server), "threading" (for executing tasks in the background), "requests" (for making HTTP requests), "time" (for adding delays), "urllib.parse" (for encoding and decoding URLs), and "netifaces" (for getting network interface information).
@@ -54,3 +56,4 @@ ________________________________________________________________________________
 10- Ele gera dois payloads diferentes para serem usados em uma injeção de comando SSRF. O primeiro payload é usado para fazer com que o servidor web na máquina-alvo baixe o arquivo "shell.ps1" e o salve em "E:\xampp\htdocs\internal\shell.ps1". O segundo payload é usado para executar o script "shell.ps1" na máquina-alvo.
 
 11- Após aguardar um breve período, o exploit envia a requisição contendo o segundo payload para a URL de injeção de comando "http://internal.ironcorp.me:11025/name.php?name=Equinox|", o que resultará na execução do script "shell.ps1" na máquina-alvo.
+
