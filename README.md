@@ -23,7 +23,7 @@ ________________________________________________________________________________
 
 5- The "check_port" function is defined to check if a given port is in use by inspecting the system's network connections using the "psutil" library.
 
-6- The first step of the exploit is to check if port 9001 is available on the system. If it's not available, it displays a message asking the user to run "nc -vnlp 9001" to listen on that port.
+6- The first step of the exploit is to check if port 9001 is listening. If not available, displays a message asking the user to run "nc -vnlp 9001" to listen on this port.
 
 7- Next, the exploit obtains the IP address of the "tun0" network interface (assuming it is a VPN) and checks if port 1234 is in use. If it's in use, it increments the port number (1235, 1236, etc.) and continues checking until it finds an available port.
 
